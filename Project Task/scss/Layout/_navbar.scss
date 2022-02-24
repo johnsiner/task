@@ -1,0 +1,84 @@
+.left-side-nav {
+    display: flex;
+    align-items: center;
+    .logo-container {
+        background-color: #9C3030;
+        padding: 6px 10px 2px 10px;
+        margin-right: 10px;
+    }
+
+    .elab-container {
+        border: solid 5px #9C3030;
+        padding: 4px 3px;
+        margin-right: 30px;
+        background-color: #FDFAFA;
+    }
+
+    .options-container {
+        margin-right: 30px;
+        .options-icon {
+            width: 35px;
+        }
+        :hover {
+            cursor: pointer;
+        }
+    }
+
+    .laboratory-name {
+        color: #5B5B5B;
+        font-weight: 900;
+        text-transform: capitalize;
+    }
+}
+
+.right-side-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    * {
+        padding: 3px;
+    }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .left-side-nav {
+        .logo-container {
+            padding: 0;
+            img {
+                width: 25px;
+                height: auto;
+            }
+        }
+
+        .elab-container {
+            border: solid 3px #9C3030;
+            img {
+                height: 15px;
+                width: auto;
+            }
+        }
+
+        .options-container {
+            display: none;
+        }
+
+        .laboratory-name {
+            font-size: 13px;
+        }
+    }
+
+    .right-side-nav {
+        margin-right: 10px;
+        .notification-img {
+            width: 30px;
+        }
+
+        .user-avatar, .name-text {
+            display: none;
+        }
+    }
+}
